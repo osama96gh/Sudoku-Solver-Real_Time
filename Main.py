@@ -5,7 +5,7 @@ from SudokoSolver import *
 hog = init_hog_descripter()
 svm_model = cv2.ml.SVM_load('svm_model.xml')
 
-use_ipwebcam = True;
+use_ipwebcam = False
 if use_ipwebcam:
     video_url = 'http://192.168.1.102:8080/video'
     video_stream = cv2.VideoCapture(video_url)
